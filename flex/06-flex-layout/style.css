@@ -25,3 +25,37 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+ul {
+  list-style-type: none; /* remove bullet points */
+}
+
+li {
+  display: inline-block; /* display bullet points horizontally */
+}
+
+a {
+  text-decoration: none; /* remove lines under links */
+  color: black;
+
+}
+
+.header {
+  display: flex;
+}
+
+.right-links {
+  margin-left: auto;
+}
+
+.content {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  margin-top: auto;
+}
