@@ -16,6 +16,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  height: 25px;
 }
 
 input {
@@ -28,6 +29,8 @@ input {
 
 ul {
   list-style-type: none; /* remove bullet points */
+  padding-left: 10px; /* note ul has a default indentation */
+  padding-right: 10px;
 }
 
 li {
@@ -36,12 +39,22 @@ li {
 
 a {
   text-decoration: none; /* remove lines under links */
-  color: black;
+  color: rgb(57, 56, 56);
+  margin: 5px;
+  padding: 0;
+  font-size: smaller;
+}
 
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .header {
   display: flex;
+  margin-bottom: auto;
 }
 
 .right-links {
@@ -55,7 +68,10 @@ a {
   flex-direction: column;
 }
 
+/* stack overflow: push footer to bottom by adding a flex container
+https://stackoverflow.com/questions/4575826/how-to-push-a-footer-to-the-bottom-of-page-when-content-is-short-or-missing */
 .footer {
   display: flex;
   margin-top: auto;
+  background-color: #eee;
 }
