@@ -4,6 +4,21 @@ body {
   min-height: 100vh;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 12px;
+}
+
+li {
+  margin: 10px 0; /* spacing between list items */
+}
+
+a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+
 .flex-wrapper {
   display: flex;
   min-height: 100vh;
@@ -34,9 +49,20 @@ body {
   align-items: center;
 }
 
+/* sidebar + cards is one horizontal box */
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
 .sidebar {
-  width: 300px;
+  min-width: 300px; /* changed width to min-width */
   background: royalblue;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .card {
@@ -45,11 +71,17 @@ body {
   border-radius: 4px;
   
   padding: 32px;
-  width: 200px;
+  width: 250px;
+  height: 300px;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  
+  margin: 20px 30px 20px 30px;
 }
